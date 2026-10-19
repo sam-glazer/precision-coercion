@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI-Enabled Precision Coercion and the End of the Bomb</title>
+<meta name="description" content="Why would any middle power still want the bomb when drones are so effective, so much cheaper and so much less dangerous? An essay on what the world looks like if AI-enabled precision coercion displaces the bomb the way the aircraft carrier displaced the battleship.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI-Enabled Precision Coercion and the End of the Bomb">
+<meta property="og:description" content="Why would any middle power still want the bomb when drones are so effective, so much cheaper and so much less dangerous? An essay on what the world looks like if AI-enabled precision coercion displaces the bomb the way the aircraft carrier displaced the battleship.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<style>
+/* Layout: one reading column, like a newsletter post page. */
+:root {
+  --bg: #ffffff;
+  --fg: #1f1f1f;
+  --muted: #6b6b6b;
+  --rule: #e4e4e4;
+  --accent: #2a5db0;
+  --table-head: #f6f6f6;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171717; --fg: #e7e5e2; --muted: #9c9a97; --rule: #2e2e2e;
+    --accent: #7aa7ea; --table-head: #222222; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171717; --fg: #e7e5e2; --muted: #9c9a97; --rule: #2e2e2e;
+  --accent: #7aa7ea; --table-head: #222222; color-scheme: dark;
+}
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+.post { max-width: 680px; margin: 0 auto; padding-block: 48px 72px; }
+header h1 {
+  font-family: var(--font-ui);
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+header .subtitle {
+  font-size: 21px;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--rule);
+  text-wrap: pretty;
+}
+header .byline {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-block: 14px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 36px;
+}
+header .byline .author { color: var(--fg); font-weight: 600; }
+header .byline .sep::before { content: "\00b7"; }
+.body p { margin: 0 0 1.25em; text-wrap: pretty; }
+.body h2 {
+  font-family: var(--font-ui);
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 2.1em 0 0.7em;
+  text-wrap: balance;
+}
+.body h3 {
+  font-family: var(--font-ui);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 1.9em 0 0.6em;
+}
+.body a { color: var(--accent); }
+.body .coda {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 2em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--rule);
+}
+.table-wrap { overflow-x: auto; margin: 1.6em 0 1.8em; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 560px;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.4;
+}
+th, td { border: 1px solid var(--rule); padding: 10px 12px; vertical-align: top; text-align: left; }
+th { background: var(--table-head); font-weight: 600; }
+td:first-child { font-weight: 600; width: 24%; }
+.not { font-weight: 700; letter-spacing: 0.04em; }
+footer {
+  margin-top: 56px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--muted);
+}
+footer a { color: var(--accent); }
+@media (max-width: 480px) {
+  body { font-size: 18px; }
+  .post { padding-block: 28px 56px; }
+  header h1 { font-size: 30px; }
+  header .subtitle { font-size: 18px; }
+  .body h2 { font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<article class="post">
+<header>
+  <h1>AI-Enabled Precision Coercion and the End of the Bomb</h1>
+  <p class="subtitle">The next nuclear age may be defined not by which states acquire nuclear weapons, but by which conclude they no longer need them.</p>
+</header>
+<div class="body">
+ <p>Dominant weapons are rarely legislated out of existence; they are simply overtaken. The battleship was never banned; carrier aviation just made it beside the point, leaving it to finish its career shelling coastlines and sitting for photographs.</p>
+<p>This is the likely trajectory of the nuclear weapon. It will linger in its silos for decades to come, drawing massive budgets and sustaining inspection regimes, retained by established powers as a hedge against low-probability existential threats. But the everyday tools of strategy, used to deter a rival, coerce without inviting total ruin, and prevail without dying, will increasingly be forms of AI-enabled precision coercion.</p>
+<p>By precision coercion, I mean the ability to discover, select, and surgically exploit specific pressure points in an adversary’s military, political, economic, and informational networks. AI industrializes this search, coordinating cheap, autonomous systems that adapt in real time. Strategic precision, once scarce and expensive, is becoming cheap, abundant, and available to any middle power.</p>
+<p>A nuclear arsenal is enormously costly and useful only against existential threats, while most competition happens in the gray zone where the bomb cannot be used. This transition does not merely swap an old weapon for a new one; it fundamentally alters how deterrence is constructed, perceived, and maintained, through six underlying disruptions.</p>
+<h2>1 — A Capability Cannot Deter Until It is Imaginable</h2>
+<p>When reports of the 1791 Haitian uprising reached France, many observers had no category for what they were seeing: they simply could not process the idea that enslaved people could defeat European power. As Michel-Rolph Trouillot’s account in <em>Silencing the Past</em> showed, the facts had to become militarily undeniable before they became conceptually visible.</p>
+<p>This is the cognitive barrier that precision coercion must cross. A capability that has not entered the adversary’s imagination cannot deter, no matter how real it is. Use alone does not produce deterrence. An adversary must comprehend what it is seeing. Nuclear weapons command immediate respect: even North Korea is never assumed to be so weak it will crumble without a fight. Non-nuclear states are routinely denied that baseline respect, and will be underestimated until, like the Haitian rebels, their capability becomes undeniable.</p>
+<p>To gain respect, weaker states must not only display their capabilities continually but also solve a signaling problem: how to make a threat credible without burning the capability that backs it. A deterrent that must be continually demonstrated is a deterrent that will be continually used. Calculated disclosures, demonstration attacks, and low-intensity, forever wars will increasingly replace the missile parades of the twentieth century. The political landscape will be permanently restless.</p>
+<h2>2 — Deterrence Becomes a Flow, Not a Stock</h2>
+<p>Nuclear deterrence rests on a stockpile; precision deterrence rests on a process—the demonstrated capacity to continually generate new advantages. Those advantages often have expiration dates. A novel autonomous-drone tactic in Ukraine remains effective for only a few weeks before the Russians find a counter; a newly discovered network vulnerability lasts only until the next security patch is applied; a fix on an adversary’s leadership (Khamenei’s location) is valuable only until he moves. Every advantage survives only until the adversary learns to patch, jam, evade, imitate, or counter it. This creates a never-ending spy-vs-spy cycle and intense “use-it-or-lose-it” pressure to act before the next adaptation renders the advantage obsolete. This persistent leapfrogging does not eliminate deterrence; it’s what deterrence now looks like.</p>
+<h2>3 — A Coup Plotter’s Weapon</h2>
+<p>Nuclear weapons have little practical value to coup plotters except as a hostage to be taken, but never actually used: destroying the capital, the army, or the society they hope to rule would defeat their purpose. Precision-coercion systems are different. They could be redirected against political leaders, communications networks, loyal military units, financial systems, or other narrowly chosen domestic targets. The same qualities that make them useful against a foreign adversary—precision, flexibility, deniability, and distributed control—make them useful in an internal struggle for power.</p>
+<p>Precision coercion thus inherits the nuclear command-and-control dilemma but makes it more treacherous for the state that owns it. A deterrent must be distributed enough to survive a first strike, yet controlled enough never to threaten its owner. Technology offers no clean escape. Cryptographic binding among sensors, processors, target libraries, and release authorities can reduce the risk of unauthorized retargeting (for example an iPhone camera module cannot function if moved to a different iPhone). But the tighter the central lock, the more brittle the system becomes if the leadership is decapitated or communications fail. Looser delegation preserves retaliatory credibility but gives intelligence factions, field commanders, or insurrectionists more opportunity to redirect the system inward. The old tension between negative and positive control reappears in software architecture, authentication keys, target libraries, and update authority. And just as coup-proofed armies have historically made poor fighting forces, a precision arsenal locked down tightly enough to be coup-proof may be too brittle to deter anyone.</p>
+<p>AI-enabled precision coercion should appeal most to states with stable governments, clear succession, and disciplined armed services—those secure enough to tolerate a decentralized architecture. For unstable regimes, acquiring it will remain a gamble, though that is unlikely to stop them from trying.</p>
+<h2>4 — An Escalation Ladder Without Rungs</h2>
+<p>Consider this scene from Michael Dobbs’ <em>One Minute to Midnight</em>. In October 1962, Dean Acheson—the canonical “Wise Man” and Truman’s Secretary of State, an architect of NATO, and the most confident hawk in the room—urged an immediate non-nuclear air strike on the Cuban missile sites. Asked how Moscow would respond, he was certain: they would hit the American missiles in Turkey. And then? Under the NATO treaty, he said, the United States would be obliged to strike a base inside the Soviet Union. And then? Acheson, by now irritated, arrived at the top of his own escalation ladder: “that’s when we hope cooler heads will prevail.”</p>
+<p>The two recent wars involving precision coercion (the use of drones in Ukraine and in Iran) shed some light on the escalation ladder. In Ukraine, many of the sharp “red lines” thought to exist early in the war have since been crossed, and the fear of nuclear retaliation appears to have declined. A likely explanation is the gradualness of the escalation itself: no single step was ever large enough to justify nuclear retaliation, and the nuclear ladder was replaced by a precision slide with no clear demarcations. Other factors surely contributed—Ukraine’s shift to home-grown weapons, pressure from China and perhaps porous economic sanctions that left Russia unwilling to disrupt its remaining supply chains and markets. But whatever their relative weight, supposedly firm red lines have repeatedly proved permeable. Future participants may enter conflicts believing that precision attacks can be expanded much further without triggering nuclear retaliation. Whether that belief is correct matters less than the fact that they may act on it.</p>
+<p>The gulf between ordinary conflict and deliberate mass death may be widening. In the recent Iran war, nuclear threats have not been necessary since any Iranian asset can be destroyed by conventional weapons. But even though the US has threatened mass destruction of civilian targets, so far, the US seems somewhat hesitant to escalate much further. Neither Putin nor Trump is known for humanitarian impulses, and both have accepted extensive civilian harm. Yet measured against Curtis LeMay’s incineration of Japanese cities or Kissinger’s air war in Southeast Asia, both have stopped far short of the mass killing once treated as an ordinary instrument of statecraft. Whether this hesitation reflects the immediate costs of Iranian counter-threats against the civilian infrastructure of U.S. Gulf State allies, or a deeper structural shift, remains an open question. But maybe the critics of Herman Kahn were right. We haven’t talked about megadeaths for almost 40 years, and now heads of state, who accept attacks on apartment buildings and the deaths of school children, find the idea of mass death unthinkable, even when nuclear weapons aren’t involved.</p>
+<h2>5 — Strategic Autonomy: Will the Supply Chain Always Run Through a Superpower?</h2>
+<p>Middle-tier states may not need a superpower’s leading-edge technology to field effective precision coercion, and in what is the most consequential case, it may be the superpower that ends up dependent.</p>
+<p>Two questions will decide who has the leverage. Do effective precision-coercion systems require frontier hardware, software, and AI models? And is data from live conflicts, like the data from Ukraine’s drone war, an indispensable asset, or can models be trained using data from simulations and war games?</p>
+<div class="table-wrap"><table> <thead> <tr> <th></th> <th><strong>Live combat data is<br/> indispensable for training</strong></th> <th><strong>Live combat data is <span class="not">NOT</span><br/> indispensable for training</strong></th> </tr> </thead> <tbody> <tr> <td><strong>Frontier HW, SW and models are required</strong></td> <td>Middle-tier combatant states can bargain for access to frontier assets; their live combat data is valuable</td> <td>Middle-tier states become dependent clients</td> </tr> <tr> <td><strong>Frontier HW, SW and models are <span class="not">NOT</span> required</strong></td> <td>Dominant powers may be disadvantaged unless they can obtain the required training data.<br/> Middle-tier combatant states can act independently</td> <td>Middle-tier states can act independently</td> </tr> </tbody> </table></div>
+<p>The most plausible answer to the first question is that frontier technology will not always be essential. Against an advanced opponent’s target-rich, tightly coupled infrastructure, large numbers of good-enough systems may be sufficient. A defense that stops 99 percent of attacks will still fail if the remaining one percent succeeds in reaching critical targets. Middle-tier states may achieve strategic effects by deploying non-frontier hardware and models at scale.</p>
+<p>In the sharpest inversion of all, it’s the dominant powers that may be left wanting if the middle tier combatants deny them access to the live data needed to train cutting-edge models.</p>
+<h2>6 — Asymmetry, Favoring the Weak</h2>
+<p>A few speedboats firing relatively simple weapons can threaten a tanker carrying $100 million of oil and immobilize an entire fleet. The stronger state’s sophistication becomes a hostage. Large, advanced states are exposed precisely because their power depends on dense, interdependent networks: finance, logistics, energy, cloud infrastructure, and automated control systems. Every dependency is a target; every automated process is a vector for localized failure to cascade into national paralysis. The weaker actor no longer aims at the city; it aims at the operating environment behind the city—the networks, routines, and confidence structures that make modern power usable.</p>
+<h3>The Ukraine Objection</h3>
+<p>The obvious objection to this argument is Ukraine. Kyiv surrendered the Soviet nuclear weapons on its territory in the 1990s and was subsequently invaded; to many, the definitive lesson of the 2020s is to keep the bomb at all costs. But that reads history too narrowly. Had Ukraine possessed usable nuclear weapons in 2022, actually firing them to repel the invasion would have invited total nuclear annihilation. The weapon Kyiv surrendered was an incredible bluff it could never have credibly executed.</p>
+<p>Conversely, had Ukraine possessed its current precision capabilities in 2022, and had Russia understood the operational humiliation and costs those systems could inflict, the threshold for invasion would have been higher and Russia would have been presented with more painful choices.</p>
+<p>To achieve security today, a state does not need to match a great power’s missile inventory or threaten total annihilation. It must build a survivable second-strike infrastructure, advertise enough of it to shatter the contempt/respect barrier, and leave enough hidden to make the risk of intervention look unpredictably expensive. For most new aspirants, the bomb’s marginal value no longer justifies decades of economic isolation, surveillance, and preventive risk. States buy weapons for the problems they actually face, and those problems are rarely solved by an unusable asset.</p>
+<h3>The Trajectory of the Bomb</h3>
+<p>The nuclear option created peace based on Mutually Assured Destruction, and the prayer that no accident, miscalculation or unauthorized act would occur. Today, a new strategic alternative is emerging: coercive force aimed not at civilian societies, but at the specific systems and decision-makers that make policy executable. A weapon that reaches the responsible parties is more useful, and more credible, than one that can only reach them through mass destruction. States will not need to be argued out of the bomb; most will simply never pick it up.</p>
+<p>Restraint is the soul of nuclear deterrence. The weapon deters because it remains unused; its credibility rests on the promise of what must never happen. AI-enabled precision coercion obeys the opposite logic. Because every exploit is patched, every tactic countered, and every algorithm leapfrogged, it can deter only if it is continually exercised.</p>
+<p class="coda">The nuclear age was defined by a weapon that must never be fired. The coming age will be defined by weapons that must never stop firing.</p> 
+</div>
+<!-- Optional footer. To add a link to your Substack, remove the comment markers
+     around the block below and put in your address.
+<footer>
+  <p>More of my writing is at <a href="https://YOURNAME.substack.com">YOURNAME.substack.com</a>.</p>
+</footer>
+-->
+</article>
+</body>
+</html>
